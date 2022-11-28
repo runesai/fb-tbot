@@ -1,0 +1,13 @@
+{
+    "name": "store-fb-bot",
+    "description": "experimental fb bot to be used for store related pages", 
+    "runtime": "python 3.9",
+    "env": [
+        {
+            "key": "BOT",
+            "description": "for fb bot",
+            "value": "Default value of the env var",
+            "required": false 
+        }
+    ]
+}

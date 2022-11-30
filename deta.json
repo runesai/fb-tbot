@@ -4,9 +4,6 @@
     "runtime": "python 3.9",
     "env": [
         {
-            "key": "PAGE_ACCESS_TOKEN",
-            "description": "for fb bot page",
-            "value": "EAAGZAZCVtqH28BABOKRRFng7971ypQAXel3aIykmzGjwrjALsQympR5DVBH02uWZCqZBFpx4ErGhswJOeKBe4opqMJzJ9TuEAuZARpyEm6JP4cnKUcsgbZAnDkCweTx4WJUfv3SHZClggcmGdqwOJueq5IBZCtNHckZBb08LktKo63j0synnpuVPx",
             "key": "VERIFY_TOKEN",
             "description": "for verifying page token",
             "value": "access_granted",

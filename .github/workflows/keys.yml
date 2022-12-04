@@ -1,0 +1,15 @@
+name: Store FB Bot Keys
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  secrets-in-github-actions:
+    runs-on: windows-latest
+    
+env:
+  PAGE_ACCESS_TOKEN: ${{ secrets.PAGE_ACCESS_TOKEN }}
+  VERIFY_TOKEN: ${{ secrets.VERIFY_TOKEN }}
+  
+#run: main

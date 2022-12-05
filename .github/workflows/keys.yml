@@ -17,10 +17,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      # this Action should follow steps to set up Python build environment
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: "requirements.txt"
 
       # Runs a single command using the runners shell
       - name: Tokens
         env:
             PAGE_ACCESS_TOKEN: ${{ secrets.PAGE_ACCESS_TOKEN }}
             VERIFY_TOKEN: ${{ secrets.VERIFY_TOKEN }}
-        run: python .github/workflows/main.py
+        run: python main.py
